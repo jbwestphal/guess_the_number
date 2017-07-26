@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1"/>
+    <meta charset="utf-8">
+	<title>Play: Guess the Number!</title>
+	<meta name="description" content="An application for play against the computer." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<link rel=stylesheet href="./assets/css/styles.css">
+</head>
+<body>
+	<main>
+		<section class="container">
+			<article class="container-wrapper">
+				<h1 class="container-title">Guess the Number!</h1>
+
+				<p class="container-descr">
+					Try to guess the number the machine is hiding! <br>
+					It is between 1 and 50.<br>
+					You have <strong id="attempts"></strong> chances!
+				</p>
+
+				<div class="container-form">
+					<input type="number" name="guessingInput" id="guessingInput" placeholder="Choose a number" class="container-form-input">
+					<button class="container-form-btn" id="guessingBtn">Guess!</button>
+				</div>
+
+			</article>
+			<div id="alertMsg">...</div>
+		</section>
+	</main>
+
+	<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:300,400,600,700" rel="stylesheet">
+	<script src="./assets/js/scripts.js"></script>
+
+</body>
+</html>
