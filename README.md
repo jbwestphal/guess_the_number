@@ -4,15 +4,20 @@ Guess the Number (v1.0)
 
 Overview
 --------
-A game for guess numbers against the computer! 
-No JQuery requirements!
-Developed with ES6, Less and HTML5. Using NodeJs and Gulp for management of tasks.
+- A game for guess numbers against the computer! 
+- No JQuery requirements!
+- Developed with ES6, Less and HTML5. Using NodeJs and Gulp for management of tasks.
+
+Demo
+----------
+Go to Demo: https://jbwestphal.github.io/guess_the_number
 
 
 Requirements
 ----------
- - Install Node
+ - Install [NodeJS]
  - Install Git
+ - Install [Gulp]
 
 
 Installation & Usage
@@ -34,3 +39,8 @@ License
 -------
  * Copyright 2017 jessicawestphal.com
  * GNU General Public License v3.0
+
+
+ [GO_TO_DEMO]: (https://jbwestphal.github.io/guess_the_number)
+ [NodeJS]: (https://nodejs.org/en/)
+ [Gulp]: (http://gulpjs.com/)
