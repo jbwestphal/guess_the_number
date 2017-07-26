@@ -13,8 +13,6 @@ Requirements
 ----------
  - Install Node
  - Install Git
- - [NODEJS]
- - [GIT]
 
 
 Installation & Usage
@@ -35,4 +33,4 @@ Browsers
 License
 -------
  * Copyright 2017 jessicawestphal.com
- * The MIT License [(MIT)] 
+ * GNU General Public License v3.0
