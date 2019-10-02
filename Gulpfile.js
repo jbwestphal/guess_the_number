@@ -10,15 +10,15 @@ const buffer = require('vinyl-buffer');
 const babelify = require('babelify');
 const source = require('vinyl-source-stream');
 
-gulp.task('styles', () => {
+gulp.task('styles', gulp.series(() => {
     return gulp.src('src/less/styles.less')
         .pipe(less())
         .pipe(cssmin())
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('assets/css'))
-});
+}));
 
-gulp.task('scripts', () => {
+gulp.task('scripts', gulp.series(() => {
 
 	var bundler = browserify({
 			entries: ['./src/js/scripts.js']
@@ -38,12 +38,12 @@ gulp.task('scripts', () => {
 
 	return bundle()
 
-});
+}));
 
-gulp.task('watch', () => {
-    gulp.watch('src/js/*.js', ['scripts']);
-    gulp.watch('src/less/*.less', ['styles']);
-});
+gulp.task('watch', gulp.series(() => {
+    gulp.watch('src/js/*.js', gulp.series('scripts'));
+    gulp.watch('src/less/*.less', gulp.series('styles'));
+}));
 
 
-gulp.task('default', ['styles', 'scripts', 'watch']);
+gulp.task('default', gulp.series(['styles', 'scripts', 'watch']));
