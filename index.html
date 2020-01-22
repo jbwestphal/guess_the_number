@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1"/>
-    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,Chrome=1" />
+	<meta charset="utf-8">
 	<title>Play: Guess the Number!</title>
 	<meta name="description" content="An application for play against the computer." />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 	<link rel=stylesheet href="./assets/css/styles.css">
 </head>
+
 <body>
 	<main>
 		<section class="container">
@@ -21,10 +23,11 @@
 				</p>
 
 				<div class="container-form">
-					<input type="number" name="guessingInput" id="guessingInput" placeholder="Choose a number" class="container-form-input">
+					<input type="number" name="guessingInput" id="guessingInput" placeholder="Choose a number"
+						class="container-form-input">
 					<button class="container-form-btn" id="guessingBtn">Guess!</button>
+					<button class="container-form-btn" id="reloadBtn" style="visibility: hidden;">Play Again</button>
 				</div>
-
 			</article>
 			<div id="alertMsg">...</div>
 		</section>
@@ -34,4 +37,5 @@
 	<script src="./assets/js/scripts.js"></script>
 
 </body>
+
 </html>
